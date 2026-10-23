@@ -1,242 +1,207 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Auto Pass Academy | Driving Lessons in Coquitlam, BC</title>
-
-  <meta name="description" content="Auto Pass Academy offers professional driving lessons in Coquitlam and surrounding Metro Vancouver areas. Call 604-401-2655 to book your driving lesson.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Pass Academy | Driving Lessons in Coquitlam, BC</title>
+<meta name="description" content="Friendly driving lessons, parking practice and road test preparation in Coquitlam and Metro Vancouver. Call 604-401-2655.">
 <meta name="geo.placename" content="Coquitlam, British Columbia, Canada">
-  <meta name="geo.region" content="CA-BC">
-   <style>
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0b2c5f, #1769aa);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #ffb703;
-      color: #111;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-      margin: 6px;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #0b2c5f;
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 18px;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .prices {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 28px 20px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      color: #1769aa;
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
-
-    .price {
-      font-size: 30px;
-      font-weight: bold;
-      color: #0b2c5f;
-      margin: 10px 0;
-    }
-
-    .features {
-      background: #eaf3fb;
-    }
-
-    .features-container {
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .features p {
-      background: white;
-      padding: 16px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    .contact {
-      text-align: center;
-      background: #0b2c5f;
-      color: white;
-      max-width: none;
-    }
-
-    .contact h2 {
-      color: white;
-    }
-
-    .phone {
-      font-size: 28px;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #061a35;
-      color: white;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 34px;
-      }
-
-      header p {
-        font-size: 18px;
-      }
-    }
-  </style>
+<meta name="geo.region" content="CA-BC">
+<meta name="theme-color" content="#0b2c5f">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#17243a;background:#f3f7fc;line-height:1.6}
+header{background:linear-gradient(135deg,#071a38,#0b2c5f,#1769aa);color:white;padding:18px 20px}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.brand{font-size:1.3rem;font-weight:800}
+.brand span{color:#57c5ff}
+nav a{color:white;text-decoration:none;margin-left:14px;font-weight:bold}
+.hero{background:linear-gradient(135deg,#071a38,#0b2c5f,#1769aa);color:white;text-align:center;padding:60px 18px 70px}
+.car{font-size:55px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin:12px auto;max-width:850px}
+.hero p{max-width:720px;margin:15px auto 25px;font-size:1.1rem;color:#e2efff}
+.button{display:inline-block;background:#1685ed;color:white;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:800;margin:5px;border:2px solid #1685ed;text-align:center}
+.button:hover{background:#086ac5;border-color:#086ac5}
+.button.outline{background:transparent;border-color:white}
+.section{max-width:1100px;margin:auto;padding:45px 18px}
+.section h2{text-align:center;color:#0b2c5f;font-size:clamp(1.7rem,4vw,2.3rem);margin:0 0 12px}
+.intro{text-align:center;max-width:750px;margin:0 auto 28px;color:#52627a}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.feature,.package{background:white;border-radius:15px;padding:22px;box-shadow:0 5px 22px rgba(13,44,85,.08)}
+.feature{text-align:center}
+.feature .symbol{font-size:30px}
+.feature h3{color:#0b2c5f;margin:8px 0}
+.packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.package{display:flex;flex-direction:column;border:1px solid #e0eafa}
+.package h3{color:#0b2c5f;font-size:1.35rem;margin:0}
+.price{color:#0879dc;font-size:2rem;font-weight:900;margin:8px 0}
+.package ul{padding-left:20px;margin:8px 0 20px}
+.package li{margin:5px 0}
+.package .button{margin:auto 0 0}
+.featured{border:2px solid #1685ed;box-shadow:0 8px 28px rgba(22,133,237,.15)}
+.tag{align-self:flex-start;background:#e1f2ff;color:#075aa5;font-size:.78rem;font-weight:800;padding:4px 9px;border-radius:20px;margin-bottom:8px}
+.notice{background:#e8f4ff;border-left:4px solid #1685ed;padding:15px 18px;border-radius:8px;margin-top:22px}
+.contact{background:#0b2c5f;color:white;text-align:center;padding:45px 18px}
+.contact h2{color:white;margin-top:0}
+.contact a:not(.button){color:#7bd4ff}
+footer{background:#071a38;color:#d6e4f5;text-align:center;padding:18px;font-size:.9rem}
+@media(max-width:600px){.nav{justify-content:center;text-align:center}nav a{margin:0 7px}.hero{padding:45px 15px 55px}.section{padding:35px 15px}}
+</style>
 </head>
-
 <body>
-
 <header>
-  <h1>🚗 AUTO PASS ACADEMY</h1>
-  <p>Learn Safely • Drive Confidently • Pass Successfully</p>
-
-  <a class="button" href="tel:+16044012655">📞 Call Now</a>
-  <a class="button" href="sms:+16044012655">Book Now</a>
+  <div class="nav">
+    <div class="brand">AUTO PASS <span>ACADEMY</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section>
-  <h2>Professional Driving Lessons</h2>
-
-  <p class="intro">
-    Auto Pass Academy provides friendly, patient and professional driving
-    instruction for new and developing drivers in Coquitlam and surrounding
-    Metro Vancouver areas. Build confidence, improve your driving skills and
-    prepare for your ICBC road test.
-  </p>
+<main>
+<section class="hero" id="home">
+  <div class="car" aria-hidden="true">🚘</div>
+  <h1>Learn to Drive with Confidence</h1>
+  <p>Patient, friendly and practical driving lessons to help you become a safer, more confident driver in Coquitlam and surrounding Metro Vancouver areas.</p>
+  <a class="button" href="#packages">Choose Your Package</a>
+  <a class="button outline" href="tel:+16044012655">Call 604-401-2655</a>
 </section>
 
-<section>
-  <h2>Lessons & Pricing</h2>
-
-  <div class="prices">
-
-    <div class="card">
-      <h3>1 Hour Lesson</h3>
-      <div class="price">$55</div>
-      <p>Private one-on-one driving lesson.</p>
+<section class="section">
+  <h2>Driving Lessons Made for You</h2>
+  <p class="intro">Whether you're a beginner, building your road skills or preparing for your road test, choose the lesson package that suits your goals.</p>
+  <div class="features">
+    <div class="feature">
+      <div class="symbol">🚗</div>
+      <h3>Private Lessons</h3>
+      <p>Personal attention focused on your driving goals.</p>
     </div>
-
-    <div class="card">
-      <h3>1.5 Hour Lesson</h3>
-      <div class="price">$75</div>
-      <p>Extra practice for faster progress.</p>
+    <div class="feature">
+      <div class="symbol">🅿️</div>
+      <h3>Parking Practice</h3>
+      <p>Practise parking and vehicle control skills.</p>
     </div>
-
-    <div class="card">
-      <h3>5 Hour Package</h3>
-      <div class="price">$260</div>
-      <p>Great value for building driving skills.</p>
+    <div class="feature">
+      <div class="symbol">🛣️</div>
+      <h3>Road Skills</h3>
+      <p>Build safe driving habits and confidence on the road.</p>
     </div>
-
-    <div class="card">
-      <h3>10 Hour Package</h3>
-      <div class="price">$500</div>
-      <p>Complete practice package for developing drivers.</p>
+    <div class="feature">
+      <div class="symbol">✅</div>
+      <h3>Road Test Prep</h3>
+      <p>Focused practice to help you prepare for your test.</p>
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Road Test Package</h3>
+<section class="section" id="packages">
+  <h2>Choose Your Driving Package</h2>
+  <p class="intro">Select a package below to open its booking calendar and request your lesson time.</p>
+  <div class="packages">
+
+    <article class="package">
+      <h3>Single Lesson</h3>
+      <div class="price">$60</div>
+      <p>One lesson to get started or practise a specific skill.</p>
+      <ul>
+        <li>1 driving lesson</li>
+        <li>60 minutes</li>
+        <li>Free pickup and drop-off within the service area, subject to scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/new-meeting" target="_blank" rel="noopener">Book Single</a>
+    </article>
+
+    <article class="package">
+      <h3>Basic Package</h3>
+      <div class="price">$255</div>
+      <p>A helpful start for building driving experience.</p>
+      <ul>
+        <li>3 driving lessons</li>
+        <li>90 minutes each</li>
+        <li>Free pickup and drop-off within the service area, subject to scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/basic-lessons-3x90-minutes" target="_blank" rel="noopener">Book Basic</a>
+    </article>
+
+    <article class="package featured">
+      <span class="tag">Popular Choice</span>
+      <h3>Silver Package</h3>
+      <div class="price">$425</div>
+      <p>More time to practise and strengthen your skills.</p>
+      <ul>
+        <li>5 driving lessons</li>
+        <li>90 minutes each</li>
+        <li>Free pickup and drop-off within the service area, subject to scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/silver-package" target="_blank" rel="noopener">Book Silver</a>
+    </article>
+
+    <article class="package">
+      <h3>Gold Package</h3>
+      <div class="price">$850</div>
+      <p>Extended practice for steady progress and confidence.</p>
+      <ul>
+        <li>10 driving lessons</li>
+        <li>90 minutes each</li>
+        <li>Free pickup and drop-off within the service area, subject to scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/gold-package" target="_blank" rel="noopener">Book Gold</a>
+    </article>
+
+    <article class="package">
+      <h3>Ultimate Package</h3>
+      <div class="price">$1,250</div>
+      <p>A longer learning plan for continued practice.</p>
+      <ul>
+        <li>15 driving lessons</li>
+        <li>90 minutes each</li>
+        <li>Free pickup and drop-off within the service area, subject to scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/ultimate-package-1-250-15-xlessons-90-minutes" target="_blank" rel="noopener">Book Ultimate</a>
+    </article>
+
+    <article class="package">
+      <h3>Road-Test Warm-Up</h3>
       <div class="price">$150</div>
-      <p>Includes warm-up practice before your road test.</p>
-    </div>
+      <p>Focused driving practice before your ICBC road test.</p>
+      <ul>
+        <li>Road-test preparation session</li>
+        <li>Practise key driving skills</li>
+        <li>Pickup subject to service area and scheduling</li>
+      </ul>
+      <a class="button" href="https://calendly.com/nawid-janm/road-test-warm-up-150-prepare-for-your-icbc-road-test" target="_blank" rel="noopener">Book Warm-Up</a>
+    </article>
 
+  </div>
+  <div class="notice">
+    <strong>Pickup and drop-off:</strong> Free with driving lesson packages within our service area, subject to scheduling. Please provide your pickup address when booking.
+  </div>
+  <div class="notice">
+    <strong>Booking note:</strong> Please check your selected package and booking details. Your appointment may require confirmation by Auto Pass Academy.
   </div>
 </section>
 
-<section class="features">
-  <h2>Why Choose Auto Pass Academy?</h2>
-
-  <div class="features-container">
-    <p>✅ Patient and professional instruction</p>
-    <p>✅ One-on-one driving lessons</p>
-    <p>✅ ICBC road test preparation</p>
-    <p>✅ Parking, intersections and defensive driving practice</p>
-    <p>✅ Convenient lesson scheduling</p>
-    <p>✅ Serving Coquitlam and surrounding areas</p>
-  </div>
+<section class="contact" id="contact">
+  <h2>Ready to Get Started?</h2>
+  <p>Contact Auto Pass Academy with your questions or choose a package to request a booking.</p>
+  <p><strong>Serving Coquitlam and surrounding Metro Vancouver areas</strong></p>
+  <p><strong>Phone:</strong> <a href="tel:+16044012655">604-401-2655</a></p>
+  <a class="button" href="tel:+16044012655">Call Us</a>
+  <a class="button outline" href="sms:+16044012655">Text Us</a>
+  <p>We look forward to helping you become a safer, more confident driver.</p>
 </section>
-
-<section class="contact">
-  <h2>Ready to Start Driving?</h2>
-
-  <p>Call or text Auto Pass Academy today.</p>
-
-  <div class="phone">604-401-2655</div>
-
-  <a class="button" href="tel:+16044012655">Call 604-401-2655</a>
-  <a class="button" href="sms:+16044012655">Book a Lesson</a>
-</section>
+</main>
 
 <footer>
-  © 2026 Auto Pass Academy • Coquitlam, British Columbia
+  <p>&copy; <span id="year"></span> Auto Pass Academy. All rights reserved.</p>
+  <p>Coquitlam, British Columbia, Canada</p>
 </footer>
-
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
